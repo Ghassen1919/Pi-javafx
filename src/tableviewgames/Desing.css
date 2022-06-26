@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 9, 2022, 6:35:43 PM
+    Author     : MSI GL-65
+*/
+
+.texfield-desing{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color:linear-gradient(to bottom right, #BE4C23,#61B8C2);
+    -fx-border-radius: 5px;
+    
+}
+.texfield-desing-search{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color:linear-gradient(to bottom right, #32D3C6 ,#FFFFFF);
+    -fx-border-radius: 5px;
+    -fx-font-size:15px;
+
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+ 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}

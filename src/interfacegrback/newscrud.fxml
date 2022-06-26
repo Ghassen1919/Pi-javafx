@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfacegrback.NewscrudController">
+   <children>
+      <AnchorPane prefHeight="380.0" prefWidth="618.0">
+         <children>
+            <VBox layoutX="14.0" layoutY="30.0" prefHeight="167.0" prefWidth="100.0" spacing="15.0">
+               <children>
+                  <Label text="titre" textFill="#660099">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="auteur" textFill="#660099">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="description" textFill="#660099">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="image" textFill="#660099">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="114.0" layoutY="30.0" prefHeight="167.0" prefWidth="100.0" spacing="8.0">
+               <children>
+                  <TextField fx:id="tftitre" />
+                  <TextField fx:id="tfauteur" />
+                  <TextField fx:id="tfimage" />
+                  <TextField fx:id="imageFld" />
+                  <Button mnemonicParsing="false" onAction="#upload" text="..." />
+               </children>
+            </VBox>
+            <TableView fx:id="tvbooks" layoutX="223.0" layoutY="35.0" onMouseClicked="#click" prefHeight="546.0" prefWidth="465.0">
+              <columns>
+                <TableColumn fx:id="coltitre" prefWidth="65.0" text="titre" />
+                  <TableColumn fx:id="colauteur" prefWidth="57.0" text="auteur" />
+                  <TableColumn fx:id="colimg" prefWidth="224.0" text="description" />
+                  <TableColumn fx:id="coldate" minWidth="0.0" prefWidth="83.0" text="date_post" />
+                  <TableColumn fx:id="colrate" prefWidth="34.0" text="rate" />
+              </columns>
+            </TableView>
+            <Button focusTraversable="false" layoutX="14.0" layoutY="219.0" mnemonicParsing="false" onAction="#btminsert" prefHeight="25.0" prefWidth="61.0" style="-fx-border-color: #660099; -fx-background-color: transparent;" text="insert" textFill="#660099">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow level="0.7" />
+               </effect></Button>
+            <Button focusTraversable="false" layoutX="88.0" layoutY="219.0" mnemonicParsing="false" onAction="#btmupdate" prefHeight="25.0" prefWidth="61.0" style="-fx-border-color: #660099; -fx-background-color: trasparent;" text="update" textFill="#660099">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow level="0.7" />
+               </effect></Button>
+            <Button focusTraversable="false" layoutX="162.0" layoutY="219.0" mnemonicParsing="false" onAction="#btmdelete" prefHeight="25.0" prefWidth="57.0" style="-fx-border-color: #660099; -fx-background-color: trasparent;" text="delete" textFill="#660099">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow level="0.7" />
+               </effect></Button>
+            <TextField fx:id="tffiltre" layoutX="64.0" layoutY="272.0" promptText="search....." />
+            <ImageView fitHeight="25.0" fitWidth="40.0" layoutX="191.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../i/téléchargement%20(1).png" />
+               </image>
+            </ImageView>
+            <Text fill="#660099" layoutX="7.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="search Box">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <Button focusTraversable="false" layoutX="62.0" layoutY="350.0" mnemonicParsing="false" onAction="#Imprimer" prefHeight="37.0" prefWidth="80.0" style="-fx-background-color: transparent; -fx-border-color: purple;" text="Imprimer" textFill="PURPLE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom threshold="0.7" />
+               </effect>
+            </Button>
+            <PieChart fx:id="pie" labelLineLength="10.0" layoutX="14.0" layoutY="401.0" prefHeight="158.0" prefWidth="200.0" title="auteur et nb post" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

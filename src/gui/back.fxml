@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="bp1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.BackController">
+   <left>
+      <VBox prefHeight="480.0" prefWidth="212.0" style="-fx-background-color: #660099;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="56.0" prefWidth="219.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="64.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../i/272837925_2375620082579032_5184045612527479214_n%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="64.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hunters" wrappingWidth="179.328125">
+                     <font>
+                        <Font name="Old English Text MT" size="43.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Line endX="138.58578491210938" endY="1.5497207641601562E-6" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+            <Button mnemonicParsing="false" onMouseClicked="#home" prefHeight="63.0" prefWidth="158.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../i/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Button>
+            <Line endX="140.58578491210938" endY="1.5497207641601562E-6" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+            <Button mnemonicParsing="false" onMouseClicked="#newscrud" prefHeight="59.0" prefWidth="153.0" style="-fx-background-color: transparent;" text="News" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../i/burger.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Button>
+            <Line endX="135.58578491210938" endY="1.5497207641601562E-6" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+            <Button mnemonicParsing="false" onMouseClicked="#reclamationcrud" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Reclamation" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../i/data.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Button>
+            <Line endX="136.58578491210938" endY="1.5497207641601562E-6" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+            <Button mnemonicParsing="false" onMouseClicked="#coomentaireCrud" prefHeight="53.0" prefWidth="198.0" style="-fx-background-color: transparent;" text="Commentaire" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/images/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Button>
+            <Line endX="136.58578491210938" endY="0.20709383487701416" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="ap1" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="52.0" fitWidth="54.0" layoutX="648.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../i/user.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </ImageView>
+            <Text fill="#660099" layoutX="154.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Admin" wrappingWidth="479.982421875">
+               <font>
+                  <Font name="Old English Text MT" size="65.0" />
+               </font>
+            </Text>
+            <Polyline fill="#99959e" layoutX="109.0" layoutY="470.0" points="0.0, -80.0, -105.0, 130.0, 598.0, -147.0, 0.0, -80.0" stroke="#660099" strokeType="INSIDE" strokeWidth="2.0" />
+            <Polyline fill="#99959e" layoutX="136.0" layoutY="84.0" points="-136.0, -84.0, 574.0, 186.0, -37.0, 117.0, -136.0, -84.0" stroke="#660099" strokeType="INSIDE" strokeWidth="2.0" />
+            <Polyline fill="#660099" layoutX="498.0" layoutY="101.0" points="-409.0, -101.0, 80.0, -19.0, 212.0, 126.0, -409.0, -101.0" strokeType="INSIDE" strokeWidth="0.0" />
+            <Polyline fill="#660099" layoutX="499.0" layoutY="487.0" points="-421.0, 113.0, 211.0, -128.0, 94.0, 27.0, -421.0, 113.0" strokeType="INSIDE" strokeWidth="0.0" />
+            <Polyline fill="#660099" layoutX="72.0" layoutY="325.0" points="-65.0, 28.0, 94.0, -99.0, -51.0, 215.0, -40.0, -246.0" strokeType="INSIDE" strokeWidth="0.0" />
+            <AnchorPane fx:id="paneMain" layoutX="568.0" layoutY="12.0" prefHeight="33.0" prefWidth="77.0" />
+            <Polyline fill="#99959e" layoutX="658.0" layoutY="530.0" points="37.0, 54.0, 31.0, -92.0, -55.0, 6.0, -256.0, 41.0" strokeType="INSIDE" strokeWidth="0.0" />
+            <Polyline fill="#99959e" layoutX="557.0" layoutY="45.0" points="141.0, 150.0, 128.0, 20.0, -217.0, -17.0, 35.0, 32.0" strokeType="INSIDE" strokeWidth="0.0" />
+            <Button layoutX="645.0" layoutY="55.0" mnemonicParsing="false" onAction="#logoutt" style="-fx-background-color: transparent; -fx-border-color: #660099;" text="logout" textFill="#660099">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="time" layoutX="519.0" layoutY="549.0" prefHeight="51.0" prefWidth="188.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

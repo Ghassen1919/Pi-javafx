@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfacegrback.ReclamationcrudController">
+   <children>
+      <AnchorPane prefHeight="380.0" prefWidth="618.0">
+         <children>
+            <TableView fx:id="tvbooks1" layoutX="232.0" layoutY="14.0" onMouseClicked="#click" prefHeight="570.0" prefWidth="455.0">
+              <columns>
+                <TableColumn fx:id="colnom" prefWidth="82.0" text="nom_rec" />
+                  <TableColumn fx:id="coldat" prefWidth="75.0" text="date_rec" />
+                  <TableColumn fx:id="coldescri" prefWidth="183.0" text="descri_rec" />
+                  <TableColumn fx:id="coldat1" prefWidth="114.0" text="traitee/non traitee" />
+              </columns>
+            </TableView>
+            <Button layoutX="23.0" layoutY="81.0" mnemonicParsing="false" onAction="#btmupdat" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: transparent; -fx-border-color: #660099;" text="update" textFill="#660099">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow level="0.7" />
+               </effect></Button>
+            <Button layoutX="138.0" layoutY="81.0" mnemonicParsing="false" onAction="#btmdelet" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: transpaernt; -fx-border-color: #660099;" text="delete" textFill="#660099">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow level="0.7" />
+               </effect></Button>
+            <TextField fx:id="tffiltre" layoutX="75.0" layoutY="271.0" promptText="search...." />
+            <Text fill="#660099" layoutX="14.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="search Box">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="199.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../i/téléchargement%20(1).png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="tftraite" layoutX="14.0" layoutY="38.0" prefHeight="25.0" prefWidth="206.0" />
+            <Text fill="#660099" layoutX="63.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="taité/non traité">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Button layoutX="81.0" layoutY="372.0" mnemonicParsing="false" onAction="#imprime" style="-fx-background-color: transparent; -fx-border-color: #660099;" text="Imprimer" textFill="#660099">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom threshold="0.76" />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

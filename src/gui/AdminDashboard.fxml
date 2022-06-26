@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="551.0" prefWidth="844.0" style="-fx-background-color: #c2daeb#c2daeb;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AdminDashboardController">
+   <children>
+      <Button fx:id="update" layoutX="43.0" layoutY="436.0" mnemonicParsing="false" onAction="#UpdateUser" prefHeight="26.0" prefWidth="160.0" style="-fx-background-color: #007FFF#007FFF #007FFF#007FFF #007FFF#007FFF #007FFF#007FFF #007FFF#007FFF #007FFF#007FFF #007FFF#007FFF #007FFF#007FFF;" text="Update" textFill="WHITE" />
+      <Button fx:id="add" layoutX="43.0" layoutY="480.0" mnemonicParsing="false" onAction="#AddUser" prefHeight="26.0" prefWidth="160.0" style="-fx-background-color: #007FFF#007FFF #007FFF#007FFF #007FFF#007FFF #007FFF#007FFF #007FFF#007FFF #007FFF#007FFF #007FFF#007FFF #007FFF#007FFF;" text="Add user" textFill="WHITE" />
+      <TableView fx:id="table" layoutX="234.0" layoutY="143.0" onMouseClicked="#getSelected" prefHeight="368.0" prefWidth="592.0">
+        <columns>
+          <TableColumn fx:id="IdUser" prefWidth="33.0" text="ID" />
+          <TableColumn fx:id="NameUser" prefWidth="71.0" text="Name" />
+            <TableColumn fx:id="LastNameUser" minWidth="0.0" prefWidth="92.0" text="Last name" />
+            <TableColumn fx:id="EmailUser" prefWidth="216.0" text="Email" />
+            <TableColumn fx:id="UserRole" prefWidth="90.0" text="Role" />
+            <TableColumn fx:id="UserStatus" prefWidth="88.0" text="Status" />
+        </columns>
+      </TableView>
+      <TextField alignment="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="78.0" prefWidth="844.0" style="-fx-background-color: #c2daeb#c2daeb;" text="Admin Dashboard">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Search" layoutX="422.0" layoutY="99.0" prefHeight="26.0" prefWidth="329.0" promptText="Search" />
+      <TextField fx:id="NameInput" editable="false" layoutX="42.0" layoutY="226.0" promptText="Name" />
+      <TextField fx:id="IdInput" editable="false" layoutX="42.0" layoutY="172.0" promptText="ID" />
+      <TextField fx:id="LastNameInput" editable="false" layoutX="42.0" layoutY="269.0" promptText="LastName" />
+      <TextField fx:id="EmailInput" editable="false" layoutX="42.0" layoutY="313.0" promptText="Email" />
+      <ComboBox fx:id="ComboxRole" editable="true" layoutX="42.0" layoutY="394.0" prefHeight="26.0" prefWidth="160.0" promptText="select role" />
+      <ComboBox fx:id="StatusCombo" editable="true" layoutX="42.0" layoutY="358.0" prefHeight="26.0" prefWidth="160.0" promptText="select status" />
+      <ImageView fitHeight="46.0" fitWidth="91.0" layoutX="751.0" layoutY="-1.0" onMouseClicked="#logoutt" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logout.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="20.0" layoutX="389.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/search.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="43.0" layoutY="135.0" prefHeight="17.0" prefWidth="160.0" text="Selected" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@newCascadeStyleSheet.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MenuController">
+   <children>
+      <Button fx:id="gesuser" layoutX="58.0" layoutY="56.0" mnemonicParsing="false" onAction="#userEvent" prefHeight="63.0" prefWidth="145.0" style="-fx-background-color: grey; -fx-border-color: #660099;" text="gestion utilisateurs" textFill="#660099">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="gesdev" layoutX="228.0" layoutY="56.0" mnemonicParsing="false" onAction="#userdev" prefHeight="63.0" prefWidth="145.0" style="-fx-background-color: grey; -fx-border-color: #660099;" text="gestions devs" textFill="#660099">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="gesgrp" layoutX="405.0" layoutY="56.0" mnemonicParsing="false" onAction="#pdf" prefHeight="63.0" prefWidth="152.0" style="-fx-background-color: grey; -fx-border-color: #660099;" text="extraire pdf" textFill="#660099">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Polyline fill="#660099" layoutX="131.0" layoutY="294.0" points="-123.0, -65.0, 382.0, 60.0, 158.0, -40.0, 390.0, -83.0" strokeType="INSIDE" />
+      <Polyline fill="#6b795d" layoutX="496.0" layoutY="273.0" points="31.0, -52.0, -130.0, -10.0, 13.0, 59.0, -67.0, -10.0" strokeType="INSIDE" />
+      <Polyline fill="#660099" layoutX="577.0" layoutY="279.0" points="13.0, -47.0, -130.0, -10.0, -16.0, 39.0, -67.0, -10.0" strokeType="INSIDE" />
+      <Button fx:id="gesuser1" layoutX="83.0" layoutY="190.0" mnemonicParsing="false" onAction="#excel" prefHeight="63.0" prefWidth="145.0" style="-fx-background-color: grey; -fx-border-color: #660099;" text="excel" textFill="#660099">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

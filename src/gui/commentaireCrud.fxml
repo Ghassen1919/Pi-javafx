@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfacegrback.CommentaireCrudController">
+   <children>
+      <AnchorPane prefHeight="380.0" prefWidth="618.0">
+         <children>
+            <VBox layoutX="14.0" layoutY="30.0" prefHeight="167.0" prefWidth="100.0" spacing="15.0" />
+            <TableView fx:id="tvbooks" layoutX="7.0" layoutY="30.0" prefHeight="507.0" prefWidth="681.0">
+              <columns>
+                <TableColumn fx:id="coltitre" prefWidth="124.0" text="nom_com" />
+                  <TableColumn fx:id="colauteur" prefWidth="381.0" text="descri_com" />
+                  <TableColumn fx:id="colimg" prefWidth="94.0" text="date_com" />
+                  <TableColumn fx:id="coldate" prefWidth="81.0" text="titre_post" />
+              </columns>
+            </TableView>
+            <Button layoutX="319.0" layoutY="547.0" mnemonicParsing="false" onAction="#btmdelete" prefHeight="25.0" prefWidth="57.0" style="-fx-border-color: #660099; -fx-background-color: tranparent;" text="delete" textFill="#660099">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow level="0.7" />
+               </effect></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
